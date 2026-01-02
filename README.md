@@ -27,6 +27,17 @@ Toggle the following:
 - Click the button
 - A random password is generated
 - The password is displayed on the screen
+
+---
+
+## 📂 Folder Structure
+```
+project/
+│
+├── index.html
+├── script.js
+└── README.md
+```
 ---
 
 ## 🔧 How It Works
