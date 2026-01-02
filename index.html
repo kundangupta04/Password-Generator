@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-gray-200 min-h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-xl p-6">
+
+    <h1 class="text-3xl font-extrabold tracking-wide mb-6">
+      RANDOM PASSWORD
+      <span class="text-red-500 block">GENERATOR</span>
+    </h1>
+
+    <div class="bg-zinc-900 rounded-2xl shadow-2xl border border-zinc-800 p-6">
+
+      <div class="bg-zinc-800 rounded-xl p-4 mb-5">
+        <input
+          id="passwordOutput"
+          type="text"
+          readonly
+          class="w-full bg-transparent text-lg outline-none tracking-wide"
+          placeholder="Password will appear here..."
+        >
+      </div>
+
+      <div class="grid gap-4">
+
+        <div>
+          <p class="text-sm mb-1">Length</p>
+          <input
+            id="passwordLength"
+            type="range"
+            min="4"
+            max="30"
+            value="12"
+            class="w-full accent-red-500"
+          />
+          <span class="text-xs">Selected: <span id="lengthValue">12</span></span>
+        </div>
+
+        <div class="grid gap-2 mt-2 text-sm">
+          <label class="flex items-center gap-2">
+            <input id="upperCheck" type="checkbox" checked class="accent-red-500">
+            Uppercase
+          </label>
+
+          <label class="flex items-center gap-2">
+            <input id="lowerCheck" type="checkbox" checked class="accent-red-500">
+            Lowercase
+          </label>
+
+          <label class="flex items-center gap-2">
+            <input id="numberCheck" type="checkbox" checked class="accent-red-500">
+            Numbers
+          </label>
+
+          <label class="flex items-center gap-2">
+            <input id="symbolCheck" type="checkbox" class="accent-red-500">
+            Special characters
+          </label>
+        </div>
+
+        <button
+          id="generateBtn"
+          class="mt-4 w-full bg-red-600 hover:bg-red-700 transition py-3 rounded-xl font-bold tracking-wide"
+        >
+          GENERATE
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
