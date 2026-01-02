@@ -31,13 +31,13 @@ Toggle the following:
 ---
 
 ## 📂 Folder Structure
-
+```
 project/
 │
 ├── index.html
 ├── script.js
 └── README.md
-
+```
 ---
 
 ## 🔧 How It Works
