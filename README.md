@@ -34,8 +34,11 @@ Toggle the following:
 
 project/
 │
+│
 ├── index.html
+│
 ├── script.js
+│
 └── README.md
 
 ---
